@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Layout</title>
+    <style>
+        .header,.nav,.main,.sideber,.advertise,.footer,.apurba{
+            background-color: bisque;
+            border: 2px solid tomato;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sideber{
+            grid-area: sideber;
+        }
+        .advertise{
+            grid-area: advertise;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .conteiner{
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+            "header  header header header"
+            "nav   main   main  sideber"
+            "nav   main    main   advertise"
+            "footer footer footer footer"
+            ;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media  screen and (max-width: 576px){
+            .conteiner{
+                grid-template-areas:
+                "header"
+                "nav" 
+                "main"
+                "sideber"
+                "advertise"
+                "footer"
+                "apurba";
+            }
+        }
+
+    </style>
+</head>
+<body class="conteiner">
+    <header class="header">
+        <h3>The header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+        <li><a href="">Menu</a></li>
+        <li><a href="">nav -2</a></li>
+        <li><a href="">nav -3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id a quos iste repellendus quidem ea quaerat repudiandae harum, dignissimos ex dolorum soluta nobis, consectetur doloribus architecto ad odit vitae.</p>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <p>Natus neque dolore dolorum veniam ipsam, harum unde, ducimus optio sed, error ab tempore illum quia rerum blanditiis fuga sapiente quibusdam eos similique recusandae excepturi doloribus? Deserunt tempora saepe mollitia.</p>
+        </article>
+    </main>
+    <aside>
+        <div class="sideber">
+            <h4>sidebar</h4>
+        </div>
+        <div class="advertise">
+            <h4>advertise</h4>
+        </div>
+       <div class="apurba">
+        <h4>fanshe</h4>
+       </div>
+        
+    </aside>
+    <footer class="footer">
+        <h3>The footer</h3>
+    </footer>
+</body>
+</html>
