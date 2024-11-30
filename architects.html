@@ -4,8 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3 architects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.work-sans-<uniquifier> {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+.nav>ul{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+text-decoration: none;
+color: #424242;
+}
+.btn-praimery{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    border: 0;
+    cursor: pointer;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #727272;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+@media screen and (max-width:576px){
+    .header{
+        padding: 20px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width: 960px){
+.nav{
+flex-direction: column;
+}
+}
+ </style>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <h3 class="nav-title">G3 Architects</h3>
+        <ul class=".work-sans-<uniquifier>">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contuct</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-content">
+                <h1 class="banner-title">Brand New Group of Architects</h1>
+                 <p class="banner-descrioption">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from , by injectied humour, or randomised words which don't look even
+                 </p>
+                    <button class="btn-praimery">Explore More</button>
+            </div>
+            <img src="image/k.jpg" alt="">
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
