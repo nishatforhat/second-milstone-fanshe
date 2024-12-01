@@ -66,8 +66,13 @@ color: #424242;
     .header{
         padding: 20px;
     }
-    .nav, .teams-conteiner,.facts-card-conteiner{
+    .nav, .teams-conteiner,.facts-card-conteiner,
+    .sponsors-img-conteiner, .feature {
         flex-direction: column;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
     }
 }
 @media screen and (min-width:576px) and (max-width: 960px){
@@ -135,6 +140,60 @@ padding: 30px;
 .Sponsors{
     text-align: center;
 }
+.sponsors-img-conteiner img{
+    height: 50px;
+    width: 50px;
+}
+.sponsors-img-conteiner{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center;
+}
+.feature{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.feature-content .card{
+padding: 30px;
+border-radius: 30px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature  .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.badge{
+    color: #FFF;
+    background: #FF900E;
+    width: 250px;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.badge h1{
+    font-size: 65px;
+    margin: 0;
+     text-align: center;
+}
+.badge p{
+    font-size: 1.5rem;
+}
+.feature-img img{
+    height: 600px;
+    width: 700px;
+    margin-left: 90px;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
  </style>
 </head>
 <body>
@@ -176,7 +235,33 @@ padding: 30px;
     </div>
   </section>
   <section class="feature">
-
+      <div class="feature-content">
+     <h2 class="section-title">Feature you will <br>love & enjoy</h2>
+      <p class="description"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+      <div class="card">
+        <h4>Dexktop & Mobile Version</h4>
+        <p class="description"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+      </div>
+      <div class="card">
+        <h4>Dexktop & Mobile Version</h4>
+        <p class="description"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+      </div>
+      <div class="card">
+        <h4>Dexktop & Mobile Version</h4>
+        <p class="description"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+      </div>
+      <div class="card">
+        <h4>Dexktop & Mobile Version</h4>
+        <p class="description"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+      </div>
+    </div>
+       <div class="feature-img">
+        <img src="image/p.jpg" alt="">
+        <div class="badge">
+          <h1>10+Years</h1>
+          <p>Experience</p>  
+        </div>
+       </div>
   </section>
   <section class="facts">
     <h3 class="nav-title">Some Facts</h3>
@@ -210,10 +295,13 @@ padding: 30px;
     <p class="description">
         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.
     </p>
+    <div class="sponsors-img-conteiner">
+        <img src="image/w.png" alt=""><img src="image/x.png" alt=""><img src="image/y.png" alt=""><img src="image/z.png" alt=""> <img src="imaige/a.png" alt="">
+    </div>
   </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        The majority have suffered alteration in some from.
     </footer>
 </body>
 </html>
