@@ -5,22 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3 architects</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-        // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.work-sans-<uniquifier> {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+      
 .header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-.nav{
+.nav,
+.teams-conteiner,
+.facts-card-conteiner
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,7 +66,7 @@ color: #424242;
     .header{
         padding: 20px;
     }
-    .nav, .teams-conteiner{
+    .nav, .teams-conteiner,.facts-card-conteiner{
         flex-direction: column;
     }
 }
@@ -86,10 +79,6 @@ flex-direction: column;
     max-width: 1440px;
     margin: 0 auto;
 }
-.teams-conteiner{
-    display: flex;
-    align-items: center;
-}
 .teams-img-conteiner{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -99,9 +88,12 @@ flex-direction: column;
     height: 200px;
     width: 200px;
 }
-.teams-content{
+.teams-content, .facts-card-conteiner{
 padding-left: 70px;
 padding-right: 70px;
+}
+.facts-card-conteiner{
+    gap: 20px;
 }
 .teams-title{
     font-size: 3rem;
@@ -113,6 +105,35 @@ font-weight: 500;
 .teams-title .feat{
     color: #FF900E;
     font-weight: 700;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+}
+.facts-card-conteiner .card{
+border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 30px;
+}
+.facts-card-conteiner{
+    display: flex;
+    justify-content: space-around;  
+}
+.facts-card-conteiner .card-stats{
+   font: size 3rem;
+   color: #424242; 
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.facts-card-conteiner .card-title{
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.Sponsors{
+    text-align: center;
 }
  </style>
 </head>
@@ -159,6 +180,33 @@ font-weight: 500;
   </section>
   <section class="facts">
     <h3 class="nav-title">Some Facts</h3>
+    <p class="description">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.</p>
+        <div class="facts-card-conteiner">
+            <div class="card">
+                <img src="image/t.png" alt="">
+                <h2 class="card-stats">54</h2>
+               <p class="card-title">Awards Winnings</p>
+            </div>
+            <div class="card">
+                <img src="image/s.png" alt="">
+                <h2 class="card-stats">1458</h2>
+                <p class="card-title">Project finished</p>
+            </div>
+            <div class="card">
+                <img src="image/u.jpg" alt="">
+                <h2 class="card-stats">590</h2>
+                <p class="card-title">Clients Worked</p>
+            </div>
+            <div class="card">
+                <img src="image/v.png" alt="">
+                <h2 class="card-stats">22583</h2>
+                <p class="card-title">Email Send</p>
+            </div>
+        </div>
+  </section>
+  <section class="Sponsors">
+    <h3 class="section-title">Our Sponsors</h3>
     <p class="description">
         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some from.
     </p>
